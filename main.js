@@ -31,11 +31,11 @@ else{
   hr.innerHTML = date1.getHours() + "<sub> h</sub>";
 }
 if (date1.getMinutes()<= 9) {
-  min.innerHTML = '0' + date1.getMinutes() + '<sub> m</sub>';
+  min.innerHTML = '0' + date1.getMinutes();
 
 }
 else {
-  min.innerHTML = date1.getMinutes() + '<sub> m</sub>';
+  min.innerHTML = date1.getMinutes() ;
 
 }
 }
