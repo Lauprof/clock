@@ -54,7 +54,7 @@ html{
 }
 .time{
   display: grid;
-  grid-template-columns: 80px 80px 60px;
+  grid-template-columns: 80px 90px 60px;
   grid-gap: 2px;
   margin:10px;
   
