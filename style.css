@@ -1,0 +1,102 @@
+* {
+    padding:0px;
+    margin:0px;
+    box-sizing: border-box;
+}
+html{
+  background-color: rgba(0,0,0,0.12);
+}
+
+@font-face {
+  font-family: myFont;
+  src: url("Itim-Regular.ttf");
+}
+
+.clock{
+ position: absolute;
+ margin:5%;
+  text-align: center ;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(10,10,52,0.19);
+  
+  width: 90%;
+  padding: 30px;
+  border-radius: 15px;
+  top:30%;
+  
+  background: linear-gradient(135deg, #14ffe9, #ffeb3b, #ff00e0);
+
+}
+.mth{
+  display: grid;
+  grid-template-columns: 90px 95px;
+  grid-gap: 15px;
+ margin:10px;
+ 
+}
+.mth #year{
+  float:left;
+  padding:10px;
+  color: white;
+  text-shadow: 1px 1px 2px black, 0 0 25px blue, 0 0 5px darkblue;
+  
+ font-size: 25px;
+  padding-left: 15px;
+  font-family: myFont;
+}
+.mth #month{
+  float:right;
+  padding: 10px;
+  padding-right: 15px;
+  text-shadow: 0 0 3px #FF0000;
+  font-size: 25px;
+  font-family: myFont;
+  
+}
+.time{
+  display: grid;
+  grid-template-columns: 80px 80px 60px;
+  grid-gap: 2px;
+  margin:4px;
+  
+}
+#hour,#second,#minute{
+  padding:2px;
+  font-size: 25px;
+  font-family: myFont;
+  color: white;
+  text-shadow: 2px 2px 4px #000000;
+  background: linear-gradient( #000000 0%, #2c3e50 30%);
+  
+}
+
+#minute::after{
+  content:' :';
+}
+#hour::after{
+  content:' :';
+}
+@media screen and (min-width:788px){
+  .clock{
+    width:60%;
+    margin:20%;
+    padding:50px;
+    
+  }
+
+.mth{
+grid-template-columns: auto auto;
+}
+  .mth #year{
+    font-size: 50px;
+
+  }
+    .mth #month{
+    font-size: 50px;
+  }
+    #hour,#minute,#second {
+      font-size: 50px;
+    }
+.time{
+grid-template-columns: auto auto auto;
+}
+}
